@@ -6,8 +6,30 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 let maincontainerEl = document.getElementById("main-container")
+let headingEl = document.getElementById("heading-el")
+let sloganEl = document.getElementById("slogan-el")
+let breakLine = document.getElementById("break-line")
+let passwordContainer = document.getElementById("password-container")
+let toggleOn = document.getElementById("toggle-on")
+let toggleOff = document.getElementById("toggle-off")
 
 
-function changeTheme() {
-  maincontainerEl.dis
+function darkTheme() {
+  toggleOff.classList.add("light-toggle")
+  toggleOn.classList.remove("dark-toggle")
+  maincontainerEl.classList.add("main-container-dark")
+  headingEl.classList.add("heading")
+  sloganEl.classList.add("slogan")
+  breakLine.classList.add("break-line")
+  passwordContainer.classList.add("password-container-dark")
+}
+
+function lightTheme() {
+  toggleOff.classList.remove("light-toggle")
+  toggleOn.classList.add("dark-toggle")
+  maincontainerEl.classList.remove("main-container-dark")
+  headingEl.classList.remove("heading")
+  sloganEl.classList.remove("slogan")
+  breakLine.classList.remove("break-line")
+  passwordContainer.classList.remove("password-container-dark")
 }

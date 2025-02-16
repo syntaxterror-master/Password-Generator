@@ -9,7 +9,7 @@ overflow: hidden;
  align-items: center;
  }
 
- #main-container {
+ .main-container {
   background-color: #ECFDF5;
   width: 550px;
   height: 550px;
@@ -52,6 +52,7 @@ overflow: hidden;
 
  hr {
   margin-top: 35px;
+  color: #D5D4D8;
  }
 
  .password-containers {
@@ -61,7 +62,7 @@ overflow: hidden;
   align-items: center;
  }
 
- #password-container {
+ .password-container {
   margin-top: 35px;
   background-color: #273549;
   height: 39px;
@@ -77,3 +78,36 @@ overflow: hidden;
 i {
   cursor: pointer;
 }
+
+.dark-toggle {
+  display: none;
+}
+
+.light-toggle {
+  display: none;
+}
+
+ .main-container-dark {
+  width: 550px;
+  height: 550px;
+  background-color: #1F2937;
+ } 
+ .heading {
+  color: #FFF
+ } 
+ .slogan {
+  color: #D5D4D8
+ } 
+ .break-line {
+  color: #2F3E53;
+ } 
+ .password-container-dark {
+  margin-top: 35px;
+  height: 39px;
+  width: 211px;
+  background-color: #273549;
+ } 
+
+ #toggle-on {
+  color: #ECFDF5;
+ }
