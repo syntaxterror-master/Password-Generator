@@ -5,6 +5,9 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
   ,"?",
 "/"];
 
+let length = 15
+
+
 let maincontainerEl = document.getElementById("main-container")
 let headingEl = document.getElementById("heading-el")
 let sloganEl = document.getElementById("slogan-el")
@@ -12,6 +15,39 @@ let breakLine = document.getElementById("break-line")
 let passwordContainer = document.getElementById("password-container")
 let toggleOn = document.getElementById("toggle-on")
 let toggleOff = document.getElementById("toggle-off")
+let firstPassword = document.getElementById("password-first")
+let secondPassword = document.getElementById("password-second")
+
+
+function generatePassword() {
+   randomPasswordOne()
+   randomPasswordTwo()
+ }
+ 
+
+function randomPasswordOne() {
+  let passwordOne = ""
+  for (let i = 0; i < length; i++) {
+    let randomChars = Math.floor(Math.random() * 90)
+    passwordOne += characters[randomChars]
+}
+firstPassword.innerText = passwordOne
+ }
+
+
+
+
+
+ function randomPasswordTwo() {
+  let passwordTwo = ""
+  for (let i = 0; i < length; i++) {
+    let randomChars = Math.floor(Math.random() * 90)
+  passwordTwo += characters[randomChars]
+}
+  secondPassword.innerText = passwordTwo
+ }
+
+
 
 
 function darkTheme() {
@@ -33,3 +69,5 @@ function lightTheme() {
   breakLine.classList.remove("break-line")
   passwordContainer.classList.remove("password-container-dark")
 }
+
+

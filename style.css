@@ -67,6 +67,12 @@ overflow: hidden;
   background-color: #273549;
   height: 39px;
   width: 211px;
+  color: #55F991;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
  }
 
 .toggle {
