@@ -55,6 +55,13 @@ overflow: hidden;
   color: #D5D4D8;
  }
 
+ label {
+  color: #1C1C1C;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
  .password-containers {
   display: flex;
   flex-direction: row;
@@ -65,14 +72,15 @@ overflow: hidden;
  .password-container {
   margin-top: 35px;
   background-color: #273549;
-  height: 39px;
-  width: 211px;
+  height: 30px;
   color: #55F991;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
  }
 
 .toggle {
@@ -117,3 +125,22 @@ i {
  #toggle-on {
   color: #ECFDF5;
  }
+
+ #length-el {
+  border: 2px solid #1F2937;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+ }
+
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .options-container {
+    display: flex;
+    gap: 10px;
+  }

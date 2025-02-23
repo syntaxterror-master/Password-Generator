@@ -17,10 +17,14 @@
       <h1 id="heading-el">Generate a<br> <span>random password</span></h1>
       <p id="slogan-el">Never use an insecure password again.</p>
       <button onclick="generatePassword()">Generate passwords</button>
+      <div class="options-container">
+      <label for="length-el"><span>Set password length:</span></label>
+      <input id="length-el" type="number" placeholder="6 - 23" min="6" max="23">
+    </div>
       <hr id="break-line">
       <div class="password-containers">
-        <div class="password-container" id="password-first"></div>
-        <div class="password-container" id="password-second"></div>
+        <input  type="text" readonly class="password-container" id="password-first"></input>
+        <input  class="password-container" type="text" readonly id="password-second"></input>
       </div>
     </div>
     </div>
